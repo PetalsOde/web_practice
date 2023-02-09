@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {font-family: Arial;}
+
+        /* Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+        }
+
+        /* Fade in tabs */
+        @-webkit-keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        @keyframes fadeEffect {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+      </style>
+  </head>
+<body>
+
+<h3>Language Data in the following Tabs</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+  a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+  placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+  quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Hindi')">Hindi Task</button>
+  <button class="tablinks" onclick="openCity(event, 'Bengali')">Bengali Task</button>
+  <button class="tablinks" onclick="openCity(event, 'Bhojpuri')">Bhojpuri Task</button>
+  <button class="tablinks" onclick="openCity(event, 'Marathi')">Marathi Task</button>
+  <button class="tablinks" onclick="openCity(event, 'Telugu')">Telugu Task</button>
+  <button class="tablinks" onclick="openCity(event, 'Kannada')">Kannada Task</button>
+</div>
+
+<div id="Hindi" class="tabcontent">
+  <h3>Hindi Task</h3>
+  <p>Hindi Task is where the heart is..</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+
+<div id="Bengali" class="tabcontent">
+  <h3>Bengali Task</h3>
+  <p>Bengali Task is where the heart is..</p> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+
+<div id="Bhojpuri" class="tabcontent">
+  <h3>Bhojpuri Task</h3>
+  <p>Bhojpuri Task is where the heart is..</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+<div id="Marathi" class="tabcontent">
+  <h3>Marathi Task</h3>
+  <p>Marathi Task is where the heart is..</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+
+<div id="Telugu" class="tabcontent">
+  <h3>Telugu Task</h3>
+  <p>Telugu Task is where the heart is..</p> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+
+<div id="Kannada" class="tabcontent">
+  <h3>Kannada Task</h3>
+  <p>Kannada Task is where the heart is..</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut, tempore rerum unde eum, 
+    a reprehenderit sequi eligendi necessitatibus, ad similique! Provident dicta ipsum veritatis 
+    placeat sint, velit suscipit. Eos reprehenderit maiores molestiae modi! Quo eum porro sequi 
+    quasi placeat quis quaerat maiores, iste quibusdam quisquam vero facere, similique necessitatibus?
+  </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
